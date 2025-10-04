@@ -76,5 +76,5 @@ The pipeline in `q2.ipynb` performs text-prompted image segmentation using **CLI
 
 ## Submission
 - Best CIFAR-10 test accuracy: 80.2 % (for scratch model),85 % (for timm from huggingface) (from Q1).
-- GitHub repo: .
+- GitHub repo Link
 - Submitted via the provided Google Form.
