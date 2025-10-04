@@ -24,24 +24,15 @@ This repository contains two Jupyter notebooks (`q1.ipynb` and `q2.ipynb`) imple
 - **Dropout**: 0.1
 - **Optimizer**: AdamW (lr=0.001, weight decay=0.05)
 - **Scheduler**: CosineAnnealingLR (T_max=200)
-- **Epochs**: 200
+- **Epochs**: 80
 - **Batch Size**: 128
 - **Loss Function**: CrossEntropyLoss with label smoothing (0.1)
 
 ### Results
 | Metric                     | Value       |
 |----------------------------|-------------|
-| Best Test Accuracy         | XX.XX%      |
+| Best Test Accuracy         |  80.2%      |
 
-*Note*: Replace `XX.XX%` with your actual best test accuracy from training.
-
-### Analysis (Bonus)
-- **Patch Size**: A patch size of 4 was chosen to balance computational efficiency and capturing local features in CIFAR-10’s small 32x32 images. Smaller patches (e.g., 2) increased computational cost without significant accuracy gains.
-- **Depth vs. Width**: A depth of 8 layers with 256 embedding dimensions provided a good trade-off between model capacity and overfitting on CIFAR-10.
-- **Data Augmentation**: Random cropping, horizontal flipping, and AutoAugment significantly improved generalization, boosting test accuracy by ~5-7%.
-- **Limitations**: The model struggles with very fine-grained classes (e.g., distinguishing similar animals in CIFAR-10) due to the small image size and limited patch granularity.
-
----
 
 ## Q2: Text-Driven Image Segmentation with SAM 2
 
@@ -84,6 +75,6 @@ The pipeline in `q2.ipynb` performs text-prompted image segmentation using **CLI
 - `README.md`: This file, describing how to run the notebooks, model configurations, results, and limitations.
 
 ## Submission
-- Best CIFAR-10 test accuracy: XX.XX% (from Q1).
-- GitHub repo: [Insert your public GitHub repo link here].
+- Best CIFAR-10 test accuracy: 80.2 % (for scratch model),85 % (for timm from huggingface) (from Q1).
+- GitHub repo: .
 - Submitted via the provided Google Form.
